@@ -1,4 +1,4 @@
-/* build 2026-11-21-j */
+/* build 2026-11-21-k */
 :root{--bg:#D4EDEA;--ink:#2B4690;--soft:#3F5BA1;--mint:#E6F4F2;--blue:#4A6FBD;--accent:#34509B;--deep:#2F4A94;--line:#A3C8CF;--serif:'Bodoni Moda',Georgia,serif;--sans:'Hanken Grotesk',system-ui,sans-serif}
 
 *{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
@@ -167,3 +167,11 @@ html{font-size:106.25%}
 @media(max-width:620px){.steps{scroll-padding-inline:1.25rem}}
 
 footer .credit a{text-decoration:underline;text-underline-offset:3px}
+
+.lang{display:inline-flex;gap:.4rem;margin-left:.6rem}
+.lang button{width:2.15rem;height:2.15rem;padding:0;border:1px solid currentColor;border-radius:50%;font:500 .7rem var(--sans);letter-spacing:.04em;opacity:.8;display:grid;place-items:center;transition:background .2s,color .2s,opacity .2s}
+.lang button:hover{opacity:1}
+.lang button[aria-pressed=true]{opacity:1;border-bottom:1px solid currentColor;background:#fff;color:#1F2D4D}
+header.solid .lang button[aria-pressed=true],header.menu-open .lang button[aria-pressed=true]{background:var(--deep);color:var(--bg)}
+#studio{padding-bottom:clamp(1.5rem,3vw,2.5rem)}.linda{padding-top:clamp(1.5rem,3vw,2.5rem)}
+@media(min-width:761px){.lindarow{grid-template-columns:6fr 5fr}}
